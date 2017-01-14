@@ -1,0 +1,17 @@
+<% layout('../layouts/master')  %>
+
+<div class="col-md-12">
+  <% include ../partials/sidebar  %>
+  <div class="col-md-8 panel panel-default">
+  	<h1 class="text-center text-muted">Sails.js + EJS</h1>
+	  <%= name %><br>
+	  <%= age %><br>
+	  <%= profession %>
+	  <div>
+	    <% _.each(users, function(user) {%>
+	       <p><%=user.email%></p>
+	    <% }) %>
+	  </div>
+  </div>
+  
+</div>
